@@ -34,7 +34,7 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         var ref = window.open('https://www.constructionprotips.com/', '_blank', 'location=no');
-        ef.addEventListener('exit', function(event) { alert(event.type); });
+	    ref.addEventListener('exit', function(event) { alert(event.type); });
         //app.receivedEvent('deviceready');
     },
     // Update DOM on a Received Event
